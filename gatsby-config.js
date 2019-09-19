@@ -1,8 +1,14 @@
-module.exports = {
+require("dotenv").config({ 
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+module.exports = { 
   siteMetadata: {
     title: `My blog`,
     description: `Blog test`,
     author: `@essejose`,
+    position:'Programador',
+    apiUrl: process.env.API_URL,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
