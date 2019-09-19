@@ -1,7 +1,7 @@
 import style from "styled-components"
 
 export const LayoutWrapper = style.section`
-  display: flex,
+  display: flex;
 `
 export const LayoutMain = style.main`
   background: #16202c;
